@@ -1,6 +1,8 @@
-This is the message of the day!
+This is a sample MOTD file. This is the message of the day ! ! !
 
-bla bla blubb
+It spans more than one line and in later versions you may use ESCAPE
+    SEQUENCES to change text color on the fly...
 
-more than one line is nice :) :) in later versions
-  you may use ESCAPE SEQUENCES FOR COLORS AND STUFF :)
+     BLA BBLA BLUBB
+
+Here's your system's command prompt now:
