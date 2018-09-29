@@ -15,23 +15,22 @@
 int main(int argc, char *argv[]) {
     int f;
 
-    char line[82];
-    char motd_file[129];
+    char line[514];
 
     if(argc == 1) {     // no args given
-        sprintf(motd_file, "%s", DEFAULT_MOTD);
+        f = fopen(DEFAULT_MOTD, "r");
     } else if(argc == 2) {
-        sprintf(motd_file, "%s", argv[1]);
+        f = fopen(argv[1], "r");
     }
 
-    f = fopen(motd_file, "r");
     if(f == NULL) {
-        printf("can't open '%s' for reading...\r\n", motd_file);
+        puts("can't open MOTD file for reading...\r\n");
         exit(-1);
     }
 
-    while(fgets(line, 82, f)) {
-        printf("%s", line);
+    while(fgets(line, 512, f)) {
+        line[strlen(line)-1] = '\0';
+        puts(line);
     }
     fclose(f);
 
