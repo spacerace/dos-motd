@@ -46,5 +46,4 @@ all builds x86-pong.
 dosbox starts dosbox with my provided dosbox.conf 
 
 # License
-Fortune code is totally written by me, it comes under terms of GPL-v2. 
-Cookie-files are taken from gentoo-project, *TODO* document licenses for these. 
+GPL-v2
